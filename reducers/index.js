@@ -1,13 +1,13 @@
-import { ADD_ENTRY, RECEIVE_ENTRIES} from "../actions"
+import { RECEIVE_ENTRIES, ADD_ENTRY } from '../actions'
 
-function entries (state={}, action) {
-    switch(action.type) {
-        case RECEIVE_ENTRIES:
+function entries (state = {}, action) {
+    switch (action.type) {
+        case RECEIVE_ENTRIES :
             return {
                 ...state,
                 ...action.entries
             }
-        case ADD_ENTRY:
+        case ADD_ENTRY :
             return {
                 ...state,
                 ...action.entry
@@ -18,4 +18,3 @@ function entries (state={}, action) {
 }
 
 export default entries
-

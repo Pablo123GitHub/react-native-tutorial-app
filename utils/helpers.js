@@ -102,6 +102,12 @@ export function getMetricMetaInfo (metric) {
         : info[metric]
 }
 
+export function getDailyReminderValue () {
+    return {
+        today: "👋 👀 do not forget about this !! "
+    }
+}
+
 export function isBetween (num, x, y) {
     if (num >= x && num <= y) {
         return true
